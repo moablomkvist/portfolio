@@ -1,16 +1,18 @@
 
 //GRADIENT CANVAS - Granim.js//
 const granimInstance = new Granim({
+  name: 'titel',
   element: '#canvas-basic',
   direction: 'top-bottom',
-  isPausedWhenNotInView: true,
+  isPausedWhenNotInView: true, //the animation always pause when changing tab//
   states : {
       "default-state": {
           gradients: [
-              ['#ff9966', '#ff5e62'],
-              ['#00F260', '#0575E6'],
-              ['#e1eec3', '#f05053']
+              ['#e3b198', '#b48687'],
+              ['#7dce9d', '#95b2d0'],
+              ['#e1eec3', '#d88587']
           ]
       }
   }
 });
+

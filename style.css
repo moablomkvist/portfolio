@@ -1,13 +1,32 @@
+*, *::before, *::after { box-sizing: border-box; }
 
+html {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+} /* Best practise in default - bescause of the box scale inside the border instead of outside = more predictable*/
 
-/* GRADIENT*/
+body {
+  background-color: #d88587;
+}
+/* GRADIENT HEADER*/
 #canvas-basic {
   position: absolute;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 40%;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+#titel {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 150px;
+  color: #ffffff;
 }
