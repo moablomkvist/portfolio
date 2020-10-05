@@ -24,9 +24,16 @@ body {
 #titel {
   display: flex;
   position: relative;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   font-family: 'Russo One', sans-serif;
   font-size: 150px;
   color: #ffffff;
+}
+
+.cvPic {
+  width: 180px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
