@@ -12,13 +12,7 @@ body {
   line-height: 1.6;
 }
 
-/* GRADIENT HEADER*/
-.header-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
+/* GRADIENT */
 
 #canvas-basic {
   position: relative;
@@ -31,6 +25,14 @@ body {
   left: 0;
 }
 
+/* HEADER */
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 #name {
   display: flex;
   align-items: center;
@@ -40,7 +42,7 @@ body {
 
 #name h1 {
   font-size: 142px;
-  text-align: center;   /*Fix this!*/
+  text-align: center;   /* Note: Fix this with flexbox */
   width: 100%;
   line-height: unset;
   margin: 0;
@@ -78,12 +80,49 @@ body {
   width: 100%;
 }
 
-/* SKILLS*/
+/* SKILLS and ICONS*/
+
+.skills-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.icons, .icon {
+  list-style-type: none;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
 
 .skills-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  width: 50%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.skills {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  width: 100%;
 }
 
 
@@ -91,72 +130,94 @@ body {
 .toolbox-skills, 
 .more-skills {
   list-style-type: none;
-  width: fit-content;
-  padding: 10px;
   font-size: 14px;
 }
 
 /*PROJECTS*/
 
 .projects {
-  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
   right: 0;
-  bottom: 0;
   left: 0;
+  background-color: #d88587;
 }
 
 .cards-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
+ul .card {
+  background-color: #e3b198;
+}
+
 .card {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   list-style: none;
-  margin: 0;
-  padding: 8px;
-  margin-bottom: 12px;
-  background-color: #e3b198;
+  margin-top: 20px;
+  margin: 5px;
+  padding-top: 20px;
 } 
-
-.card-image {
-  max-width: 100%;
-  vertical-align: middle;
-  opacity: 0.6;
-  transition: 0.3s;
-}
 
 .card-image:hover {
   opacity: 1;
 }
 
-/*TOUGHTS OF CODE*/
+.card-image {
+  width: 90%;
+  box-shadow: 2px 2px 4px #532323;
+  opacity: 0.6;
+  transition: 0.3s;
+}
 
+
+/*TOUGHTS OF CODE*/
+/*
 .code-toughts {
   display: flex;
   flex-direction: column;
+  align-content: center;
   flex-wrap: wrap;
 }
 
 .tought {
   flex-direction: column;
+  align-content: center;
   list-style: none;
 }
+/*
 
-/*TOUGHTS OF CODE*/
 
-footer, .contact {
+/*FOOTER*/
+
+footer {
   background-color: #e3b198;
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style: none;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.contact {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
 
@@ -169,7 +230,7 @@ footer, .contact {
   flex-direction: row;    
 }
 
-  .cvPic {
+.cvPic {
   width: 50%;
 }
 
@@ -218,6 +279,7 @@ footer, .contact {
 
 .about-container {
   display: flex;
+  align-items: flex-start; 
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
@@ -235,8 +297,9 @@ footer, .contact {
   z-index: 3;
   position: relative;
   top:-100px;
-  left:50px;
 } 
+
+/* SKILLS + ICONS */
 
 /* PROJECT -- DESKTOP */
 
@@ -261,3 +324,4 @@ footer, .contact {
   width: 32%;
   background-color: #e3b198;
 } 
+}
