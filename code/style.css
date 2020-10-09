@@ -100,7 +100,6 @@ body {
   align-items: center;
 }
 
-
 .code-skills, 
 .toolbox-skills, 
 .more-skills {
@@ -200,10 +199,6 @@ footer {
   padding: 0;
   margin: 0;
   line-height: 0.5;
-}
-
-.contact p {
-  color: #ffffff;
 }
 
 .icon-pic {
