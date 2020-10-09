@@ -163,26 +163,6 @@ a, .card {
   border: solid 3px #d88587;
 }
 
-
-
-
-/*TOUGHTS OF CODE*/
-/*
-.code-toughts {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-.tought {
-  flex-direction: column;
-  align-content: center;
-  list-style: none;
-}
-/*
-
-
 /*FOOTER*/
 
 footer {
@@ -193,6 +173,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  margin: 0;
 }
 
 .icons {
@@ -203,6 +184,7 @@ footer {
   padding: 0;
   margin: 0;
   list-style-type: none;
+  margin-top: 60px;
 }
 
 .icon {
@@ -217,9 +199,12 @@ footer {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  line-height: 1;
+  line-height: 0.5;
 }
 
+.contact p {
+  color: #ffffff;
+}
 
 .icon-pic {
   display: flex;
@@ -251,9 +236,7 @@ footer {
 .more-skills {
   margin: 10px;
 }
-
 }
-
 
 /* For desktop: */
 @media (min-width:1025px)  {
@@ -315,7 +298,7 @@ footer {
 /* SKILLS */
 
 .skills {
-  margin: 80px;
+  margin: 20px;
 }
 
 .code-skills,
@@ -350,12 +333,7 @@ footer {
 
 /* FOOTER -- DESKTOP */
 
-footer {
-  margin: 50px;
-}
-
 .contact {
   margin: 40px;
 }
-
 }
