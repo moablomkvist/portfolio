@@ -2,7 +2,6 @@
 
 html {
   box-sizing: border-box;
-  margin: 0;
   height: 100%;
 } /* Best practise in default - bescause of the box scale inside the border instead of outside = more predictable*/
 
@@ -10,6 +9,7 @@ body {
   background-color: #d88587;
   font-family: 'Lora', serif;
   line-height: 1.6;
+  margin: 0;
 }
 
 /* GRADIENT */
@@ -61,6 +61,7 @@ body {
 .about-container {
   display: flex;
   flex-direction: column-reverse;
+  align-items: flex-start;
   width: 100%;
   top: 0;
   right: 0;
@@ -71,7 +72,7 @@ body {
 
 .about-content {
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   padding: 10px;
   width: 100%;
 }
@@ -114,38 +115,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
   padding-top: 50px;
   padding-bottom: 50px;
   right: 0;
   left: 0;
-  background-color: #d88587;
+  background-color: #e3b198;
 }
 
 .cards-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
-ul .card {
-  background-color: #e3b198;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  list-style: none;
-  margin-top: 20px;
-  margin: 5px;
-  padding-top: 20px;
-} 
 
 .card-image:hover {
   opacity: 1;
@@ -157,6 +140,30 @@ ul .card {
   opacity: 0.6;
   transition: 0.3s;
 }
+
+a, .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 20px;
+  margin: 5px;
+  padding-top: 20px;
+} 
+
+.card-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.skill-tag {
+  padding: 10px;
+  margin: 10px;
+  border: solid 3px #d88587;
+}
+
+
 
 
 /*TOUGHTS OF CODE*/
@@ -179,9 +186,10 @@ ul .card {
 /*FOOTER*/
 
 footer {
-  background-color: #e3b198;
+  background-color: #d88587;
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
@@ -198,7 +206,7 @@ footer {
 }
 
 .icon {
-  padding: 3px;
+  padding: 15px;
 }
 
 .contact {
@@ -209,8 +217,14 @@ footer {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  line-height: 1;
 }
 
+
+.icon-pic {
+  display: flex;
+  flex-direction: row;
+}
 
 /******** Responsive ***********/
 
@@ -231,6 +245,13 @@ footer {
   padding: 10px;
   width: 50%;
 }
+
+.code-skills,
+.toolbox-skills,
+.more-skills {
+  margin: 10px;
+}
+
 }
 
 
@@ -288,9 +309,20 @@ footer {
   z-index: 3;
   position: relative;
   top:-100px;
+  align-items: flex-start;
 } 
 
-/* SKILLS + ICONS */
+/* SKILLS */
+
+.skills {
+  margin: 80px;
+}
+
+.code-skills,
+.toolbox-skills,
+.more-skills {
+  margin: 30px;
+}
 
 /* PROJECT -- DESKTOP */
 
@@ -315,4 +347,15 @@ footer {
   width: 32%;
   background-color: #e3b198;
 } 
+
+/* FOOTER -- DESKTOP */
+
+footer {
+  margin: 50px;
+}
+
+.contact {
+  margin: 40px;
+}
+
 }
