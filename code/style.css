@@ -197,6 +197,7 @@ footer {
   width: 50%;
   list-style-type: none;
   padding: 0;
+  padding-top: 50px;
   margin: 0;
   line-height: 0.5;
 }
