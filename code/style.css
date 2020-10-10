@@ -42,7 +42,7 @@ body {
 
 #name h1 {
   font-size: 142px;
-  text-align: center;   /* Note: Fix this with flexbox */
+  text-align: center;   /* Note to self: Fix this with flexbox */
   width: 100%;
   line-height: unset;
   margin: 0;
@@ -294,14 +294,15 @@ footer {
 /* SKILLS */
 
 .skills {
-  margin: 20px;
+  margin: 15px;
 }
 
+li,
 .code-skills,
 .toolbox-skills,
 .more-skills {
-  margin: 30px;
-}
+  padding: 5px;
+} 
 
 /* PROJECT -- DESKTOP */
 
