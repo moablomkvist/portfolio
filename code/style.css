@@ -183,11 +183,12 @@ footer {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
-.icon {
-  padding: 15px;
+ul, .icon {
+  margin: 0;
+  padding: 10px;
 }
 
 .contact {
@@ -197,7 +198,7 @@ footer {
   width: 50%;
   list-style-type: none;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 20px;
   margin: 0;
   line-height: 0.5;
 }
@@ -205,6 +206,8 @@ footer {
 .icon-pic {
   display: flex;
   flex-direction: row;
+  list-style-type: none;
+  margin-bottom: 20px;
 }
 
 /******** Responsive ***********/
@@ -331,6 +334,6 @@ li,
 /* FOOTER -- DESKTOP */
 
 .contact {
-  margin: 40px;
+  margin: 10px;
 }
 }
