@@ -134,7 +134,8 @@ body {
 }
 
 .card-image {
-  width: 90%;
+  width: 80%;
+  margin: 10px;
   box-shadow: 2px 2px 4px #532323;
   opacity: 0.6;
   transition: 0.3s;
@@ -230,11 +231,17 @@ ul, .icon {
   width: 50%;
 }
 
+.card-image {
+  height: 100%;
+  width: 70%;
+}
+
 .code-skills,
 .toolbox-skills,
 .more-skills {
   margin: 10px;
 }
+
 }
 
 /* For desktop: */
@@ -267,6 +274,12 @@ ul, .icon {
 
 #name p {
   font-size: 30px;
+}
+
+.card-image {
+  height: 240px;
+  width: 50%;
+
 }
 
 /* ABOUT-- DESKTOP */
@@ -309,6 +322,11 @@ li,
 
 /* PROJECT -- DESKTOP */
 
+.card-image {
+  height: 100%;
+  width: 80%;
+}
+
 .projects {
   display: flex;
   flex-direction: column;
@@ -317,10 +335,12 @@ li,
 }
 
 .cards-container {
+  object-fit: cover;
   flex-direction: row;
   align-items: center;
   width: 100%;
 }
+
 
 .card {
   display: flex;
